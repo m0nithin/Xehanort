@@ -1,0 +1,255 @@
+/* Reset some default styles */
+
+.header {
+    background-color: #333;
+}
+
+.social_icon__ {
+    display: flex;
+    align-items: baseline;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.social_icon__::before {}
+
+.social_icon__::after {}
+
+.social_icon__ img {
+    height: 20px;
+}
+
+.header_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    max-width: 1250px;
+    margin: auto;
+    width: 100%;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eee;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #eee;
+    font: 24px;
+}
+
+.signup-button {
+    color: #028697;
+    font-size: 25px;
+    font-size: 1.08rem;
+    line-height: 1.5;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #000;
+    color: #96d5dc;
+    min-width: 180px;
+    text-transform: uppercase;
+    -webkit-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+    background: #001f23;
+    border-color: #00fff2;
+    border: 1px solid #50d0d5;
+    padding: 10px 30px 8px;
+    font-family: "widzard";
+    text-align: center;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    /* background-color: #1f373cb8; */
+    padding: 0px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    /* border: 1px solid #50d0d5; */
+}
+
+.nav-list li {
+    display: flex;
+}
+
+.nav-list li a {
+    color: rgb(255 255 255 / 60%);
+    text-decoration: none;
+    font-family: "harry";
+    font-weight: 100;
+    font-family: "Balthazar", serif;
+    font-size: 18px;
+    padding: 0 15px;
+    border-right: 1px solid rgb(229 231 235 / 10%);
+    line-height: 0.8;
+}
+
+#icon {
+    cursor: pointer;
+    display: none;
+}
+
+.btns_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_primary {
+    display: flex;
+    outline: none;
+    border: 0;
+    /* padding: 15px 30px; */
+    background: url("../images/btn.png");
+    color: #fff;
+    background-size: contain;
+    font-family: "Germania One", system-ui;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    height: 55px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.btn_secondary {
+    display: flex;
+    outline: none;
+    border: 0;
+    /* padding: 15px 30px; */
+    background: url("../images/btn.png");
+    color: #fff;
+    background-size: contain;
+    font-family: "Germania One", system-ui;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    height: 55px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Media query for screens smaller than 768px */
+
+.two__dcsj {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        align-items: center;
+        padding: 40px 20px;
+        border-radius: 0px;
+        row-gap: 30px;
+        border: 0px;
+        transition: all 0.5s ease-in-out;
+        text-align: center;
+    }
+    .telele {
+        height: 35px !important;
+    }
+    .shadow {
+        position: absolute;
+        top: -7rem;
+        left: -15rem;
+        z-index: 30;
+        display: block;
+        height: auto;
+        width: 100%;
+        left: -20rem;
+        top: 14rem;
+        width: 1345px;
+        height: 602px;
+    }
+    .two__dcsj {
+        display: flex;
+    }
+    .one__dcsfdj {
+        display: none;
+    }
+    .navbar {
+        position: fixed;
+        top: 74px;
+        left: -100%;
+        background-color: #050509;
+        width: 100%;
+        height: 100vh;
+        z-index: 11;
+        transform: translateX(-500px);
+        background-color: #152847;
+        background-image: url(https://www.darkestdungeon.com/images/texture.jpg);
+        background-blend-mode: multiply;
+        transition: 3s auto;
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+        padding-top: 91px;
+    }
+    #icon {
+        display: block;
+        filter: invert(1);
+        width: 35px;
+    }
+    .navbar.show {
+        transform: translateX(0px);
+        left: 0;
+    }
+    .signup-button {
+        display: block;
+        margin-top: 10px;
+    }
+    #banner img {
+        height: 100px !important;
+    }
+}
+
+.heading____ .h2 {
+    font-size: 3rem;
+    font-family: "Balthazar";
+}
+
+.link_primary {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Germania One";
+}
+
+.about__p {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 22px;
+    padding: 0 10px;
+}
